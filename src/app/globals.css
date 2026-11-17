@@ -1,0 +1,151 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #fdf6ec;
+  --cream-deep: #f6ead4;
+  --gold: #b8860b;
+  --gold-light: #d4a94c;
+  --gold-soft: #e8c87a;
+  --ink: #3a2a1a;
+  --maroon: #6b1f23;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-cormorant);
+  overflow-x: hidden;
+}
+
+.font-display {
+  font-family: var(--font-playfair);
+}
+
+.font-script {
+  font-family: var(--font-script);
+}
+
+.font-numeral {
+  font-family: var(--font-numeral);
+  font-variant-numeric: lining-nums proportional-nums;
+}
+
+.gold-text {
+  background: linear-gradient(180deg, #f3d98a 0%, #b8860b 55%, #8a640a 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* High-contrast name treatment for photo backgrounds: solid warm-gold fill
+   with a dark stroke + layered shadow so it stays readable over any image. */
+.hero-name {
+  color: #fdeab0;
+  -webkit-text-stroke: 1.5px rgba(59, 25, 10, 0.85);
+  text-shadow:
+    0 0 10px rgba(0, 0, 0, 0.55),
+    0 2px 4px rgba(0, 0, 0, 0.6),
+    0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.divider-orn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.divider-orn::before,
+.divider-orn::after {
+  content: "";
+  height: 1px;
+  width: 48px;
+  background: linear-gradient(90deg, transparent, var(--gold-light));
+}
+
+.divider-orn::after {
+  background: linear-gradient(90deg, var(--gold-light), transparent);
+}
+
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-14px); }
+}
+
+.animate-float {
+  animation: float-slow 6s ease-in-out infinite;
+}
+
+@keyframes float-slower {
+  0%, 100% { transform: translateY(0px) translateX(0px); }
+  50% { transform: translateY(-8px) translateX(6px); }
+}
+
+.animate-float-slow {
+  animation: float-slower 9s ease-in-out infinite;
+}
+
+.card-frame {
+  position: relative;
+  border: 3px solid #c8962c;
+  box-shadow:
+    0 0 0 2px #fff3d6,
+    0 0 0 6px #e7bb5a,
+    0 0 0 7px #a9771f,
+    0 8px 24px rgba(107, 31, 35, 0.18);
+}
+
+.sky-bg {
+  background: linear-gradient(
+    180deg,
+    #2f8fe0 0%,
+    #4ea2e8 22%,
+    #78b9ef 45%,
+    #a9d4f4 68%,
+    #d9ecfb 100%
+  );
+}
+
+.cloud-puff {
+  position: absolute;
+  background: #fff;
+  border-radius: 999px;
+  filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.06));
+}
+
+.cloud-puff::before,
+.cloud-puff::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 999px;
+}
+
+/* Pillar border background: a fixed 130%-of-width / 100%-of-height scale
+   guarantees the same left/right pillar crop on every section regardless
+   of that section's actual height (object-cover would otherwise zoom in
+   more on tall sections and crop the pillars away entirely). */
+.bg-pillar-border {
+  background-image: url("/bg/temple-pillars-border.jpg");
+  background-size: 130% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Keep content readable on very large monitors / TVs instead of stretching
+   edge-to-edge, while every section's background still spans full width. */
+section > .relative.z-10,
+footer > .relative.z-10 {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
