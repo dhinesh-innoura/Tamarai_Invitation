@@ -38,30 +38,30 @@ export default function Countdown() {
 
       <div className="relative z-10">
         <Reveal>
-          <h2 className="font-display text-2xl text-[var(--maroon)] sm:text-3xl">
+          <h2 className="font-display text-xl text-[var(--maroon)] sm:text-2xl md:text-3xl">
             On the following events
           </h2>
         </Reveal>
 
         <Reveal delay={0.06}>
-          <p className="font-script mt-6 text-3xl text-[var(--gold)]">
+          <p className="font-script mt-4 text-2xl text-[var(--gold)] sm:mt-6 sm:text-3xl">
             Counting the Days
           </p>
         </Reveal>
 
-        <div className="mx-auto mt-10 grid max-w-xl grid-cols-4 gap-3 sm:gap-6">
+        <div className="mx-auto mt-8 grid max-w-xl grid-cols-4 gap-2 sm:mt-10 sm:gap-6">
           {units.map((u, i) => (
             <Reveal
               key={u.label}
               delay={0.1 + i * 0.1}
               direction="scale"
               duration={0.6}
-              className="card-frame rounded-lg bg-[var(--cream)] px-2 py-5"
+              className="card-frame rounded-lg bg-[var(--cream)] px-1 py-3 sm:px-2 sm:py-5"
             >
-              <div className="font-numeral text-3xl text-[#141414] sm:text-4xl">
+              <div className="font-numeral text-xl text-[#141414] sm:text-3xl md:text-4xl">
                 {mounted ? String(u.value).padStart(2, "0") : "00"}
               </div>
-              <div className="mt-1 text-[10px] uppercase tracking-[0.2em] text-[var(--ink)]/60 sm:text-xs">
+              <div className="mt-1 text-[9px] uppercase tracking-[0.15em] text-[var(--ink)]/60 sm:text-[10px] sm:tracking-[0.2em] md:text-xs">
                 {u.label}
               </div>
             </Reveal>

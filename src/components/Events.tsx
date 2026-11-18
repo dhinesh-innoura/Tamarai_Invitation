@@ -27,10 +27,10 @@ export default function Events() {
     <section className="bg-pillar-border relative overflow-hidden px-6 py-28 text-center">
       <div className="relative z-10">
         <Reveal>
-          <p className="font-script text-3xl text-[var(--gold)]">Events</p>
+          <p className="font-script text-2xl text-[var(--gold)] sm:text-3xl">Events</p>
         </Reveal>
 
-        <div className="mx-auto mt-12 flex w-full max-w-5xl flex-col gap-20">
+        <div className="mx-auto mt-10 flex w-full max-w-5xl flex-col gap-12 sm:mt-12 sm:gap-20">
           {events.map((e) => (
             <div
               key={e.title}
@@ -40,7 +40,7 @@ export default function Events() {
             >
               <Reveal
                 direction={e.imageSide === "right" ? "right" : "left"}
-                className="relative h-80 w-full sm:h-[480px] sm:w-1/2"
+                className="relative h-56 w-full sm:h-[480px] sm:w-1/2"
               >
                 <Image
                   src={e.photo}
@@ -53,17 +53,17 @@ export default function Events() {
               <Reveal
                 direction={e.imageSide === "right" ? "left" : "right"}
                 delay={0.1}
-                className="flex w-full flex-col justify-center p-8 text-left sm:w-1/2"
+                className="flex w-full flex-col justify-center p-5 text-left sm:w-1/2 sm:p-8"
               >
-                <h3 className="font-display text-2xl text-[var(--maroon)]">
+                <h3 className="font-display text-lg text-[var(--maroon)] sm:text-2xl">
                   {e.title}
                 </h3>
-                <p className="font-numeral mt-3 text-sm uppercase tracking-[0.2em] text-[#141414]">
+                <p className="font-numeral mt-2 text-xs uppercase tracking-[0.15em] text-[#141414] sm:mt-3 sm:text-sm sm:tracking-[0.2em]">
                   {e.date}
                 </p>
-                <p className="font-numeral text-sm text-[#141414]">{e.time}</p>
-                <p className="mt-4 text-base text-[var(--ink)]/80">{e.desc}</p>
-                <p className="font-numeral mt-5 text-sm uppercase tracking-[0.2em] text-[#141414]">
+                <p className="font-numeral text-xs text-[#141414] sm:text-sm">{e.time}</p>
+                <p className="mt-3 text-sm text-[var(--ink)]/80 sm:mt-4 sm:text-base">{e.desc}</p>
+                <p className="font-numeral mt-3 text-xs uppercase tracking-[0.15em] text-[#141414] sm:mt-5 sm:text-sm sm:tracking-[0.2em]">
                   {e.venue}
                 </p>
               </Reveal>

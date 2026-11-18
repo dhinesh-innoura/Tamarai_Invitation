@@ -15,13 +15,13 @@ export default function Gallery() {
     <section className="bg-pillar-border relative overflow-hidden px-6 py-28 text-center">
       <div className="relative z-10">
         <Reveal>
-          <p className="font-script text-3xl text-[var(--gold)]">Our Moments</p>
+          <p className="font-script text-2xl text-[var(--gold)] sm:text-3xl">Our Moments</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <div className="divider-orn mt-6" />
+          <div className="divider-orn mt-4 sm:mt-6" />
         </Reveal>
 
-        <div className="mx-auto mt-10 grid max-w-5xl grid-cols-2 gap-8 sm:grid-cols-3">
+        <div className="mx-auto mt-8 grid max-w-5xl grid-cols-2 gap-4 sm:mt-10 sm:grid-cols-3 sm:gap-8">
           {photos.map((src, i) => (
             <Reveal key={src} delay={i * 0.08} direction="scale" duration={0.6}>
               <div className="card-frame group relative aspect-square overflow-hidden rounded-lg">

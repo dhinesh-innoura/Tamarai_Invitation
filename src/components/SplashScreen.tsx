@@ -46,7 +46,7 @@ export default function SplashScreen() {
                   window.dispatchEvent(new Event("invitation:open"));
                 }}
                 whileTap={{ scale: 0.95 }}
-                className="mt-2 rounded-full bg-[var(--cream)] px-10 py-3 text-sm uppercase tracking-[0.25em] text-[var(--maroon)] shadow-lg transition hover:bg-[var(--gold)] hover:text-white"
+                className="mt-2 rounded-full bg-[var(--cream)] px-7 py-2.5 text-xs uppercase tracking-[0.2em] text-[var(--maroon)] shadow-lg transition hover:bg-[var(--gold)] hover:text-white sm:px-10 sm:py-3 sm:text-sm sm:tracking-[0.25em]"
               >
                 Open Invitation
               </motion.button>

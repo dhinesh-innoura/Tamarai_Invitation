@@ -14,10 +14,10 @@ export default function MapSection() {
     >
       <div className="relative z-10">
         <Reveal>
-          <p className="font-script text-3xl text-[var(--gold)]">Find Us</p>
+          <p className="font-script text-2xl text-[var(--gold)] sm:text-3xl">Find Us</p>
         </Reveal>
         <Reveal delay={0.1}>
-          <p className="font-numeral mx-auto mt-3 max-w-md text-lg text-[#141414]">
+          <p className="font-numeral mx-auto mt-3 max-w-md text-sm text-[#141414] sm:text-lg">
             {VENUE_QUERY}
           </p>
         </Reveal>
@@ -27,7 +27,7 @@ export default function MapSection() {
             href={VENUE_MAPS_LINK}
             target="_blank"
             rel="noreferrer"
-            className="card-frame mx-auto mt-8 block max-w-3xl overflow-hidden rounded-xl"
+            className="card-frame mx-auto mt-6 block max-w-3xl overflow-hidden rounded-xl sm:mt-8"
           >
             <iframe
               title="Venue location"
@@ -46,7 +46,7 @@ export default function MapSection() {
             href={VENUE_MAPS_LINK}
             target="_blank"
             rel="noreferrer"
-            className="mt-6 inline-block border-b border-[var(--gold)] text-sm uppercase tracking-[0.2em] text-[var(--gold)] transition hover:text-[var(--maroon)]"
+            className="mt-6 inline-block border-b border-[var(--gold)] text-xs uppercase tracking-[0.15em] text-[var(--gold)] transition hover:text-[var(--maroon)] sm:text-sm sm:tracking-[0.2em]"
           >
             Open in Google Maps
           </a>
