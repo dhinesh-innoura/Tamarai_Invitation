@@ -59,7 +59,7 @@ export default function MusicPlayer() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         whileTap={{ scale: 0.9 }}
-        className="fixed bottom-6 right-6 z-[60] flex h-12 w-12 items-center justify-center rounded-full bg-[var(--maroon)] text-[var(--cream)] shadow-lg"
+        className="fixed right-4 top-4 z-[60] flex h-11 w-11 items-center justify-center rounded-full bg-[var(--maroon)] text-[var(--cream)] shadow-lg sm:right-6 sm:top-6 sm:h-12 sm:w-12"
         aria-label={playing ? "Pause music" : "Play music"}
       >
         {playing ? (

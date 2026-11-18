@@ -33,7 +33,7 @@ export default function Countdown() {
   ];
 
   return (
-    <section className="bg-pillar-border relative overflow-hidden px-6 py-28 text-center">
+    <section className="bg-pillar-border relative overflow-hidden px-8 py-28 text-center sm:px-6">
       <div className="absolute inset-0 bg-[var(--cream-deep)]/25" />
 
       <div className="relative z-10">
@@ -49,14 +49,14 @@ export default function Countdown() {
           </p>
         </Reveal>
 
-        <div className="mx-auto mt-8 grid max-w-xl grid-cols-4 gap-2 sm:mt-10 sm:gap-6">
+        <div className="mx-auto mt-8 grid max-w-xl grid-cols-4 gap-3 sm:mt-10 sm:gap-6">
           {units.map((u, i) => (
             <Reveal
               key={u.label}
               delay={0.1 + i * 0.1}
               direction="scale"
               duration={0.6}
-              className="card-frame rounded-lg bg-[var(--cream)] px-1 py-3 sm:px-2 sm:py-5"
+              className="gallery-frame rounded-lg bg-[var(--cream)] px-1 py-3 sm:px-2 sm:py-5"
             >
               <div className="font-numeral text-xl text-[#141414] sm:text-3xl md:text-4xl">
                 {mounted ? String(u.value).padStart(2, "0") : "00"}
