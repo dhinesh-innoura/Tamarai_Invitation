@@ -19,7 +19,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
-          className="card-frame mx-auto w-full max-w-3xl rounded-2xl bg-[var(--cream)]/95 px-6 py-8 sm:px-16 sm:py-10"
+          className="card-frame mx-auto w-full max-w-3xl rounded-2xl bg-[var(--cream)]/95 px-3 py-8 sm:px-16 sm:py-10"
         >
           <p className="font-script text-2xl text-[var(--maroon)]">
             We are getting married
@@ -29,8 +29,8 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, delay: 0.15 }}
-            className="font-display gold-text mt-4 whitespace-nowrap leading-[0.95] tracking-wide"
-            style={{ fontSize: "clamp(1.75rem, 8vw, 3.25rem)" }}
+            className="font-display gold-text mt-4 whitespace-nowrap leading-[0.95] tracking-normal sm:tracking-wide"
+            style={{ fontSize: "clamp(1.3rem, 6.8vw, 3.25rem)" }}
           >
             E. TAMARAI SELVAN
           </motion.h1>
@@ -52,8 +52,8 @@ export default function Hero() {
             initial={{ opacity: 0, scale: 0.92 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.1, delay: 0.3 }}
-            className="font-display gold-text whitespace-nowrap leading-[0.95] tracking-wide"
-            style={{ fontSize: "clamp(1.75rem, 8vw, 3.25rem)" }}
+            className="font-display gold-text whitespace-nowrap leading-[0.95] tracking-normal sm:tracking-wide"
+            style={{ fontSize: "clamp(1.3rem, 6.8vw, 3.25rem)" }}
           >
             P. AKSHAYA
           </motion.h1>

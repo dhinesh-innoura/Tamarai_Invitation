@@ -103,6 +103,26 @@ body {
     0 8px 24px rgba(107, 31, 35, 0.18);
 }
 
+.gallery-frame {
+  position: relative;
+  border: 2px solid #c8962c;
+  box-shadow:
+    0 0 0 1px #fff3d6,
+    0 0 0 4px #e7bb5a,
+    0 6px 16px rgba(107, 31, 35, 0.15);
+}
+
+@media (min-width: 640px) {
+  .gallery-frame {
+    border-width: 3px;
+    box-shadow:
+      0 0 0 2px #fff3d6,
+      0 0 0 6px #e7bb5a,
+      0 0 0 7px #a9771f,
+      0 8px 24px rgba(107, 31, 35, 0.18);
+  }
+}
+
 .sky-bg {
   background: linear-gradient(
     180deg,
