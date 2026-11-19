@@ -8,7 +8,7 @@ export default function Footer() {
           E. Tamarai Selvan &amp; P. Akshaya
         </p>
         <p className="font-numeral mt-2 text-xs uppercase tracking-[0.3em] text-[var(--cream)]/80">
-          14 December 2026 · N.S. Kalyana Mahal, Madurai
+          14 December 2026 · NS Khalyana Mahal, Madurai
         </p>
       </div>
     </footer>

@@ -24,7 +24,7 @@ export default function InviteSection() {
             With the blessings of the Almighty and our beloved parents,
             <br />
             <span className="font-semibold text-[var(--ink)]">
-              Mr. A. Periyasamy &amp; Mrs. P. Anandhi
+              Mr. P. Elangumaran &amp; Mrs. E. Annalakshmi
             </span>
             <br />
             cordially invite you to grace the auspicious wedding ceremony of
@@ -52,11 +52,14 @@ export default function InviteSection() {
         {/* bride lineage */}
         <Reveal delay={0.48}>
           <p className="mx-auto max-w-xl text-sm leading-relaxed text-[var(--ink)]/80 sm:text-lg">
-            and beloved daughter of
+            With hearts full of gratitude and joy, the proud parents
             <br />
             <span className="font-semibold text-[var(--ink)]">
-              Mr. P. Elangumaran &amp; Mrs. E. Annalakshmi
+              Mr. A. Periyasamy &amp; Mrs. P. Anandhi
             </span>
+            <br />
+            joyfully request your presence as they give away their beloved
+            daughter in marriage
           </p>
         </Reveal>
 
@@ -74,7 +77,7 @@ export default function InviteSection() {
             Venue
           </p>
           <p className="font-numeral mt-1 text-lg text-[#141414] sm:text-xl">
-            N.S. Kalyana Mahal
+            NS Khalyana Mahal
           </p>
           <p className="mt-1 text-sm text-[var(--ink)]/70 sm:text-base">
             Girivalapathai, Thenparankundram, Madurai

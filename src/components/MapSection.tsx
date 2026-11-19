@@ -1,7 +1,7 @@
 import Reveal from "./Reveal";
 
 const VENUE_QUERY =
-  "N.S. Kalyana Mahal, Girivalapathai, Thenparankundram, Madurai";
+  "NS Khalyana Mahal, Girivalapathai, Thenparankundram, Madurai";
 const VENUE_MAPS_LINK = "https://maps.app.goo.gl/M6Nx7f7xG65h8BGp8";
 const VENUE_LAT = 9.8716968;
 const VENUE_LNG = 78.0713374;
